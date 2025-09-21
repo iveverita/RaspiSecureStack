@@ -32,24 +32,26 @@ The goal of this project is to provide a reproducible, security-first setup that
 
 ## Project Structure
 
+```
 RaspiSecureStack/
 ├── ssh/
-│   └── sshd_config                    # Hardened SSH configuration
+│   └── sshd_config             # Hardened SSH configuration
 ├── docker/
-│   ├── docker-compose.yml             # Service stack definition
+│   ├── docker-compose.yml      # Service stack definition
 │   ├── config/
-│   │   └── default.conf               # Nginx config
+│   │   └── default.conf        # Nginx config
 │   ├── html/
-│   │   └── index.html                 # WebPage source code
+│   │   └── index.html          # WebPage source code
 │   ├── adguard/
-│   │   ├── conf/
-│   │   │   └── AdGuardHome.yaml       # AdGuard config
-│   │   └── work/
+│   │   ├── conf/AdGuardHome.yaml  # AdGuard config
+│   │   └── work/ 
 │   ├── n8n/
-│   │   ├── config/                    # Private config
-│   │   ├── notes/
-│   │   └── ssh/
+│   │   ├── config/             # Private config
+│   │   ├── notes/ 
+│   │   └── ssh/ 
 │   └── portainer/
-│       ├── docker_config/             # chmod 700
-│       └── tls/                       # chmod 700
+│       ├── docker_config/      # chmod 700
+│       └── tls/                # chmod 700
 └── README.md
+```
+
