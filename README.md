@@ -31,3 +31,62 @@ The goal of this project is to provide a reproducible, security-first setup that
 ---
 
 ## Project Structure
+
+```
+RaspiSecureStack/
+├── ssh/
+│   └── sshd_config             # Hardened SSH configuration
+├── docker/
+│   ├── docker-compose.yml      # Service stack definition
+│   ├── config/
+│   │   └── default.conf        # Nginx config
+│   ├── html/
+│   │   └── index.html          # WebPage source code
+│   ├── adguard/
+│   │   ├── conf/AdGuardHome.yaml  # AdGuard config
+│   │   └── work/ 
+│   ├── n8n/
+│   │   ├── config/             # Private config
+│   │   ├── notes/ 
+│   │   └── ssh/ 
+│   └── portainer/
+│       ├── docker_config/      # chmod 700
+│       └── tls/                # chmod 700
+└── README.md
+```
+
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Raspberry Pi (tested on Pi 5, should work on Pi 3 as well)  
+- Raspberry Pi OS (Debian-based) with Docker & Docker Compose installed  
+- SSH access with keys configured  
+
+### Deploy
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/<your-username>/RaspiSecureStack.git
+   cd RaspiSecureStack/docker
+   ```
+2. Start the stack:
+   ```bash
+   docker compose up -d
+   ```
+3. Access services:
+   ```bash
+    Portainer → http://<pi-ip>:9000
+    Nginx → http://<pi-ip>:8080 (or HTTPS on 8443)
+    n8n → http://<pi-ip>:5678
+    AdGuard Home → http://<pi-ip>:3000
+   ```
+
+ ### Security Notes
+ 1. SSH is configured to accept only key-based authentication.
+ 2. Root login via SSH is disabled.
+ 3. If using Nginx over the public internet, enable TLS (Let’s Encrypt recommended).
+ 4. Consider restricting SSH and Docker services to Tailscale or LAN access for maximum security.
+ 5. Don't forget to assign a static IP to your pi via router DHCP settings. I also suggest setting a second DNS (1.1.1.1 for example) after setting the pi as the primary. This will permit to keep connection in case your pi is pluged-off
