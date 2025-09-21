@@ -70,16 +70,16 @@ RaspiSecureStack/
 1. Clone this repo:
    ```bash
    git clone https://github.com/<your-username>/RaspiSecureStack.git
-   cd RaspiSecureStack/docker```
-
+   cd RaspiSecureStack/docker
+   ```
 2. Start the stack:
    ```bash
-   docker compose up -d```
-
+   docker compose up -d
+   ```
 3. Access services:
    ```bash
     Portainer → http://<pi-ip>:9000
     Nginx → http://<pi-ip>:8080 (or HTTPS on 8443)
     n8n → http://<pi-ip>:5678
     AdGuard Home → http://<pi-ip>:3000
-
+   ```
