@@ -31,3 +31,27 @@ The goal of this project is to provide a reproducible, security-first setup that
 ---
 
 ## Project Structure
+
+RaspiSecureStack/
+├── ssh/
+│ └── sshd_config # Hardened SSH configuration
+├── docker/
+│ ├── docker-compose.yml # Service stack definition
+│ └── config/
+│ 	└── default.conf # Nginx config
+│ └── html/
+│ 	└── index.html # WebPage source code
+│ └── adguard/
+│ 	└── conf/AdGuardHome.yaml # AdGurad config
+│ 	└── work/ 
+│ └── n8n/
+│ 	└── config/ # Private config
+│ 	└── notes/ 
+│ 	└── ssh/ 
+│ └── adguard/
+│ 	└── conf/AdGuardHome.yaml # AdGurad config
+│ 	└── work/ 
+│ └── portainer/
+│ 	└── docker_config/ # chmod 700
+│ 	└── tls/ # chmod 700
+└── README.md
