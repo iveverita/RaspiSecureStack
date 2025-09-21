@@ -34,24 +34,24 @@ The goal of this project is to provide a reproducible, security-first setup that
 
 ```
 RaspiSecureStack/
-├── ssh/<br>
-│   └── sshd_config             # Hardened SSH configuration<br>
-├── docker/<br>
-│   ├── docker-compose.yml      # Service stack definition<br>
-│   ├── config/<br>
-│   │   └── default.conf        # Nginx config<br>
-│   ├── html/<br>
-│   │   └── index.html          # WebPage source code<br>
-│   ├── adguard/<br>
-│   │   ├── conf/AdGuardHome.yaml  # AdGuard config<br>
-│   │   └── work/ <br>
-│   ├── n8n/<br>
-│   │   ├── config/             # Private config<br>
-│   │   ├── notes/ <br>
-│   │   └── ssh/ <br>
-│   └── portainer/<br>
-│       ├── docker_config/      # chmod 700<br>
-│       └── tls/                # chmod 700<br>
-└── README.md<br>
+├── ssh/
+│   └── sshd_config             # Hardened SSH configuration
+├── docker/
+│   ├── docker-compose.yml      # Service stack definition
+│   ├── config/
+│   │   └── default.conf        # Nginx config
+│   ├── html/
+│   │   └── index.html          # WebPage source code
+│   ├── adguard/
+│   │   ├── conf/AdGuardHome.yaml  # AdGuard config
+│   │   └── work/ 
+│   ├── n8n/
+│   │   ├── config/             # Private config
+│   │   ├── notes/ 
+│   │   └── ssh/ 
+│   └── portainer/
+│       ├── docker_config/      # chmod 700
+│       └── tls/                # chmod 700
+└── README.md
 ```
 
