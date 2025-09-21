@@ -90,3 +90,4 @@ RaspiSecureStack/
  3. If using Nginx over the public internet, enable TLS (Let’s Encrypt recommended).
  4. Consider restricting SSH and Docker services to Tailscale or LAN access for maximum security.
  5. Don't forget to assign a static IP to your pi via router DHCP settings. I also suggest setting a second DNS (1.1.1.1 for example) after setting the pi as the primary. This will permit to keep connection in case your pi is pluged-off
+ 6. Docker setup: [Install Docker](https://github.com/docker/docker-install)
