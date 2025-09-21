@@ -33,7 +33,7 @@ The goal of this project is to provide a reproducible, security-first setup that
 ## Project Structure
 
 ```
-RaspiSecureStack/<br>
+RaspiSecureStack/
 ├── ssh/<br>
 │   └── sshd_config             # Hardened SSH configuration<br>
 ├── docker/<br>
