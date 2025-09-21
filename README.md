@@ -83,3 +83,10 @@ RaspiSecureStack/
     n8n → http://<pi-ip>:5678
     AdGuard Home → http://<pi-ip>:3000
    ```
+
+ ### Security Notes
+ 1. SSH is configured to accept only key-based authentication.
+ 2. Root login via SSH is disabled.
+ 3. If using Nginx over the public internet, enable TLS (Let’s Encrypt recommended).
+ 4. Consider restricting SSH and Docker services to Tailscale or LAN access for maximum security.
+ 5. Don't forget to assign a static IP to your pi via router DHCP settings. I also suggest setting a second DNS (1.1.1.1 for example) after setting the pi as the primary. This will permit to keep connection in case your pi is pluged-off
