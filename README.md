@@ -81,5 +81,5 @@ RaspiSecureStack/
     Portainer → http://<pi-ip>:9000
     Nginx → http://<pi-ip>:8080 (or HTTPS on 8443)
     n8n → http://<pi-ip>:5678
-    AdGuard Home → http://<pi-ip>:3000```
+    AdGuard Home → http://<pi-ip>:3000
 
